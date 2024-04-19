@@ -1,0 +1,340 @@
+header{
+    width: 100%;
+    background: rgb(2, 2, 2);
+    height: 90px;
+    
+    
+}
+
+.logo{
+    width: 10%;
+    height: auto;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    
+}
+
+.boton {
+    background-color: red;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+nav ul li a {
+    color: #faf7f7; /* color del link */
+    text-decoration: none;
+    padding: 10px;
+    
+}
+
+
+
+.menu nav {
+    position: relative; /* Enable relative positioning */
+    z-index: 2; /* Place the navigation bar above the menu content */
+    
+}
+
+
+
+
+ul li{
+    display: inline-block;
+    padding: auto;
+}
+
+.search-container {
+    background-color: #030000; /* Background color for the search container */
+    padding: 1px;
+    border-radius: 5px; /* Add rounded corners */
+    
+}
+
+.search-container input[type="text"] {
+    width: 200px; /* Adjust width as needed */
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #060606; /* Border color */
+    border-radius: 5px; /* Rounded corners for input field */
+}
+
+.search-container button[type="submit"] {
+    background-color: #070707; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Indicate clickable behavior */
+}
+
+.slider-frame {
+	width: 1280px;
+    height: none;
+	margin: none;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+    
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/* sombreado imagenes slider*/
+
+.slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 127%;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+    z-index: 1; /* Place behind the images */
+}
+
+/* texto sobre el slider */
+
+.slider-text {
+    position: absolute; /* Position absolutely for overlay */
+    top: 50%; /* Center vertically */
+    left: 40%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Account for absolute positioning */
+    color: white; /* Set text color */
+    text-align: center; /* Center text within the slider */
+    z-index: 1; /* Ensure text is above the slider images */
+}
+
+.slider-text h1 {
+    font-size: 5em; /* Adjust font size for heading */
+    margin-bottom: 10px; /* Add spacing below heading */
+}
+
+.slider-text p {
+    font-size: 1.2em; /* Adjust font size for paragraph */
+    line-height: 1.5; /* Adjust line spacing for readability */
+    max-width: 80%; /* Limit paragraph width to prevent overlapping */
+}
+
+
+
+.slider-text2 {
+    position: absolute; /* Position absolutely for overlay */
+    top: 50%; /* Center vertically */
+    left: 58%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Account for absolute positioning */
+    color: rgb(246, 4, 4); /* Set text color */
+    text-align: center; /* Center text within the slider */
+    z-index: 1; /* Ensure text is above the slider images */
+}
+
+.slider-text2 h1 {
+    font-size: 5em; /* Adjust font size for heading */
+    margin-bottom: 10px; /* Add spacing below heading */
+}
+
+.slider-text2 p {
+    font-size: 1.2em; /* Adjust font size for paragraph */
+    line-height: 1.5; /* Adjust line spacing for readability */
+    max-width: 80%; /* Limit paragraph width to prevent overlapping */
+}
+
+.slider-text3 {
+    position: absolute; /* Position absolutely for overlay */
+    top: 90%; /* Center vertically */
+    left: 15%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Account for absolute positioning */
+    color: rgb(246, 243, 243); /* Set text color */
+    text-align: center; /* Center text within the slider */
+    z-index: 1; /* Ensure text is above the slider images */
+}
+
+.slider-text3 h1 {
+    font-size: 5em; /* Adjust font size for heading */
+    margin-bottom: 10px; /* Add spacing below heading */
+}
+
+.slider-text3 p {
+    font-size: 1.2em; /* Adjust font size for paragraph */
+    line-height: 1.5; /* Adjust line spacing for readability */
+    max-width: 80%; /* Limit paragraph width to prevent overlapping */
+}
+
+.slider-text4 {
+    position: absolute; /* Position absolutely for overlay */
+    top: 90%; /* Center vertically */
+    left: 20%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Account for absolute positioning */
+    color: rgb(248, 3, 3); /* Set text color */
+    text-align: center; /* Center text within the slider */
+    z-index: 1; /* Ensure text is above the slider images */
+}
+
+.slider-text4 h1 {
+    font-size: 5em; /* Adjust font size for heading */
+    margin-bottom: 10px; /* Add spacing below heading */
+}
+
+.slider-text4 {
+    font-size: 1.2em; /* Adjust font size for paragraph */
+    line-height: 1.5; /* Adjust line spacing for readability */
+    max-width: 80%; /* Limit paragraph width to prevent overlapping */
+}
+
+.slider-text5 {
+    position: absolute; /* Position absolutely for overlay */
+    top: 95%; /* Center vertically */
+    left: 16%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Account for absolute positioning */
+    color: rgb(248, 3, 3); /* Set text color */
+    text-align: center; /* Center text within the slider */
+    z-index: 1; /* Ensure text is above the slider images */
+}
+
+.slider-text5 h1 {
+    font-size: 5em; /* Adjust font size for heading */
+    margin-bottom: 10px; /* Add spacing below heading */
+}
+
+.slider-text5 {
+    font-size: 1.2em; /* Adjust font size for paragraph */
+    line-height: 1.5; /* Adjust line spacing for readability */
+    max-width: 80%; /* Limit paragraph width to prevent overlapping */
+}
+
+.slider-text6 {
+    position: absolute; /* Position absolutely for overlay */
+    top: 95%; /* Center vertically */
+    left: 23%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Account for absolute positioning */
+    color: rgb(255, 253, 253); /* Set text color */
+    text-align: center; /* Center text within the slider */
+    z-index: 1; /* Ensure text is above the slider images */
+}
+
+.slider-text6 h1 {
+    font-size: 5em; /* Adjust font size for heading */
+    margin-bottom: 10px; /* Add spacing below heading */
+}
+
+.slider-text6 {
+    font-size: 1.2em; /* Adjust font size for paragraph */
+    line-height: 1.5; /* Adjust line spacing for readability */
+    max-width: 80%; /* Limit paragraph width to prevent overlapping */
+}
+
+/*boton centro slider*/
+
+.slider-button {
+    position: absolute; /* Position absolutely for overlay */
+    top: 70%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Account for absolute positioning */
+    z-index: 2; /* Place above the images and overlay */
+    padding: 10px 20px;
+    border: rgb(3, 3, 3) 3px solid;
+    
+    cursor: pointer; /* Indicate clickable behavior */
+}
+
+.slider-button a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none; /* Remove default link underline */
+}
+
+
+/* continuacion*/
+.datalist {
+    position: absolute; /* Position absolutely for overlay */
+    top: 110%; /* Center vertically */
+    left: 20%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Account for absolute positioning */
+    z-index: 2; /* Place above the images and overlay */
+    padding: 10px 20px;
+    
+    
+}
+
+
+.datalist label.label {
+    flex:10; /* Set fixed width for label */
+    margin-right: 12px; /* Add spacing between label and input */
+    
+}
+
+.datalist input.input {
+    padding: 5px; /* Add padding for better user experience */
+    z-index: 2;
+    background-color: #dddcdc;
+}
+
+.datalist input.placeholder{
+    background-color: #160404;
+}
+
+.datalist h3{
+    top: 110%; /* Center vertically */
+    left: 15%; /* Center horizontally */
+    color: #e8f0ee;
+
+
+}
+.siguiente {
+    position: 200px;
+    top: auto;
+}
+
+
+
+
+
+
+
+
+
+
